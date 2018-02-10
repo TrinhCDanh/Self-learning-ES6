@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>computed-property-names</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let prefix = "support_321_";
+		let boots = {
+			[`${prefix}chrome`]: true,
+			[`${prefix}firefox`]: true,
+			[`${prefix}opera`]: false
+		};
+
+		console.log(boots);
+		document.write(boots.support_321_chrome);
+
+		for (item in boots)
+			document.write(boots[item]);
+	</script>
+</body>
+</html>

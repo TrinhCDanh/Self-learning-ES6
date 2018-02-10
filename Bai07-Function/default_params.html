@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Default params</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function showInfo(name, price = "free") {
+			//-- Template string
+			return `Course name: ${name} and Price: ${price}`;
+		}
+
+		document.write(showInfo("ES6"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow Function This</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let student = {
+			name: "Meesi",
+			courses: ["Android", "PHP", "Java"],
+			showInfo: function() {
+				this.courses.forEach(elem => document.write(`${this.name} study ${elem} <br>`));
+			}
+		}
+
+		student.showInfo();
+
+	</script>
+</body>
+</html>

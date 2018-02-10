@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inheritance</title>
+</head>
+<body>
+	<script type="text/javascript">
+		class Person {
+			constructor(code, name, age) {
+				this.code = code;
+				this.name = name;
+				this.age = age;
+			}
+
+			showInfo() {
+				return this.code + " - " + this.name + " - " + this.getAge();
+			}
+
+			getAge() {
+				let today = new Date;
+				let year = today.getFullYear();
+				return year - this.age;
+			}
+		}
+
+		class Student extends Person {
+			constructor(code, name, age, score) {
+				super(code, name, age);
+				this.score = score;
+			}
+
+			showInfo() {
+				super.showInfo();
+				console.log(" - " + this.score);
+			}
+			
+		}
+
+		let personObj = new Person("SV001", "John Doe", 1996);
+		console.log(personObj);
+
+		let studentObj = new Student("SV001", "Messi", 1996, 10);
+		console.log(studentObj);
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rest params</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*function caculate(action, x, y) {
+			let result = 0;
+			switch(action) {
+				case '+':
+					result = x + y;
+					break;
+				case '-':
+					result = x - y;
+					break;
+				default:
+				return 0;
+			}
+			return result;
+		}
+
+		document.write(caculate('/',2,1));*/
+
+		//-- Rest params
+		//-- ...values là mảng chứa các biến còn lại sau biến action
+		function caculate(action, ...values) {
+			console.log(values); //arr values = [2,1]
+			var result = 0;
+			switch(action) {
+				case '+':
+					for (let value of values) result += value;
+					break;
+				case '-':
+					var result = values[0];
+					for (i = 1; i < values.length; i++) result -= values[i];
+					//result += values[0];
+					break;
+				default:
+				return 0;
+			}
+			return result;
+		}
+
+		document.write(caculate('+',-2,-1));
+	</script>
+</body>
+</html>

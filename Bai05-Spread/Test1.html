@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spread</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let courseWeb  = ["PHP", "Zend", "Wordpress"];
+		let courseMobile = ["Android", "Window Phone"];
+
+		//  ...spread
+		let course = ["jQuery", ...courseWeb, "IOS", ...courseMobile];
+
+		for (item of course)
+			document.write(item + "<br>");
+	</script>
+</body>
+</html>

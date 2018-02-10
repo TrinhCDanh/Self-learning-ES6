@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow Function 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let course = ["Reactjs", "Nodejs", "Typescript", "Laravel"];
+
+		document.write(
+			course.map((index, elem) => {
+				return index.toUpperCase();
+			})
+		);
+		document.write("<br>");
+		//-- Sap xep
+		let number = [4,3,6,1,5,2];
+
+		document.write(
+			number.sort((x, y) => {
+				return x-y;
+			})
+		);
+	</script>
+</body>
+</html>

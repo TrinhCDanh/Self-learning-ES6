@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>property-value-shorthand</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let getCourse = (name, price, free) => {
+			return {
+				name,
+				price,
+				free
+			}
+		}
+
+		var myCourse = getCourse("Java", 20, false)
+
+		console.log(myCourse);
+		/*for (item in myCourse) 
+			document.write(myCourse.item);*/
+	</script>
+</body>
+</html>

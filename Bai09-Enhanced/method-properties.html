@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Method Properties</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let getCourse = (name, price, free) => {
+			return {
+				name,
+				price,
+				free, 
+
+				showInfo: function() {
+					document.write(`${name + " - " + price + " - " + free}`);
+				},
+
+				showInfo1() {
+					document.write(`${name + " - " + price + " - " + free}`);
+				},
+
+				showInfo1(delimiter) {
+					document.write(`${name + delimiter + price + delimiter + free}`);
+				}
+			}
+		}
+
+		var myCourse = getCourse("ES6", 20 ,false);
+		myCourse.showInfo1(" +++++ "); 
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destructuring Array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let arr = [123, "Hello", false];
+
+		//--Old
+		/*let id = arr[0];
+		let name = arr[1];
+		let free = arr[2];*/
+
+		//--Destructuring
+		let [id, name, free] = arr;
+
+		console.log(id + " - " + name + " - " + free);
+	</script>
+</body>
+</html>

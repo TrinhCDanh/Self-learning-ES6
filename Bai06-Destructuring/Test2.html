@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destructuring Object</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let obj = {
+			id: 456,
+			name: "ES6",
+			free: false, 
+			createBy: "admin123"
+		};
+
+		//-- Destructuring
+		//-- Không quan trọng thứ tự
+		let {id, name, free, createBy = "admin"} = obj;
+
+		console.log(id + " - " + name + " - " + free + " - " + createBy);
+	</script>
+</body>
+</html>
